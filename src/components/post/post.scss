@@ -1,0 +1,94 @@
+.post {
+    height: 39rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .postWrapper {
+        box-shadow: 0px 0px 35px 2px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 35px 2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 35px 2px rgba(0, 0, 0, 0.75);
+        border-radius: 10px;
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem;
+
+        .postTop{
+            display: flex;
+            justify-content: space-between;
+
+            .postTopLeft{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+
+                img{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .postUser{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                }
+                .postTime{
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                }
+            }
+            .postTopRight{
+                .postOption{
+                    cursor: pointer;
+                }
+            }
+        }
+        .postCenter{
+            width: 100%;
+            gap: 1rem;
+            margin-top: 1rem;
+            span{
+                font-size: 1rem;
+                font-weight: 500;
+                margin: 0.5rem 0px;
+            }
+            img{
+                max-height: 500px;
+                width: 100%;
+                object-fit: contain;
+                margin: 1rem 0;
+            }
+        }
+        .postBottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .postBottomLeft{
+                display: flex;
+                align-items: center;
+                gap: 0.4rem;
+
+                img{
+                    object-fit: cover;
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    cursor: pointer;
+                }
+                span{
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+            .postBottomRight{
+                span{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
